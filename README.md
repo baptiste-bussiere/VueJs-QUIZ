@@ -1,2 +1,7 @@
 # VueJs-QUIZ
-Création d'un Quiz éducatif en VueJS 
+
+## Introduction
+
+
+Création d'un Quiz éducatif en VueJS.
+

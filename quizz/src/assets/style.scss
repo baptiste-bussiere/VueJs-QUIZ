@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Luckiest+Guy&family=Quicksand:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: #1A204D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.menu_box {
+    width: 25vw;
+    height: 80vh;
+    background-color: #2A3164;
+    border-radius: 1.2em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    overflow: hidden;
+    overflow-y: scroll;
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .router {
+            color: #fff;
+            font-family: 'Bowlby One SC', cursive;
+            text-decoration: none;
+        }
+    }
+    .quiz_box {
+        margin: 1em;
+        border-radius: 1em;
+        overflow: hidden;
+        position: relative;
+        .quiz_info {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            color: #000;
+            background-color: rgb(238, 238, 238);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                font-family: 'Bowlby One SC', cursive;
+                font-size: 2em;
+                display: flex;
+                align-items: center;
+                margin: 0.5em;
+            }
+            .routerlink {
+                cursor: pointer;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 600;
+                font-size: 0.8em;
+                text-decoration: none;
+                margin: 1em;
+                border: 1px solid #2A3164;
+                border-radius: 10em;
+                padding: 0.7em 2em;
+                background-color: transparent;
+                transition: 250ms;
+                &:hover {
+                    border: 1px solid #2A3164;
+                    background-color: #2A3164;
+                    color: #fff;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

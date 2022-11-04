@@ -17,10 +17,87 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     overflow: hidden;
     overflow-y: scroll;
+    padding: 0.5em;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .quiz_image {
+        padding: 1em;
+        img {
+            margin: 1em 0;
+            width: 100%;
+            border-radius: 1em;
+        }
+    }
+    h1 {
+        font-size: 1.4em;
+        margin: 0;
+        font-family: 'Bowlby One SC', cursive;
+        text-align: center;
+        margin-bottom: 0.3em;
+    }
+    .select_response {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .response {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin: 0.5em;
+            border-radius: 1em;
+            padding: 1.7em;
+            color: #fff;
+            cursor: pointer;
+            background-color: #383E6E;
+            border: none;
+            transition: 250ms;
+            &:hover {
+                background-color: #454d8b;
+            }
+        }
+    }
+    .button {
+        border-radius: 1em;
+        color: #fff;
+        width: 95%;
+        padding: 1.7em;
+        border: none;
+        margin: 0.5em 0;
+        background: linear-gradient(90deg, rgba(128, 0, 255, 1) 0%, rgba(215, 2, 245, 1) 100%);
+        font-family: 'Quicksand', sans-serif;
+        transition: 250ms;
+        border: 1px solid rgba(128, 0, 255, 1);
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .prec {
+        background: transparent;
+        border: none;
+    }
+    .progress_bar {
+        display: flex;
+        justify-content: center;
+        .progress_round {
+            border-radius: 10em;
+            border: 1px solid #fff;
+            height: 2.3em;
+            width: 2.3em;
+            margin: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bowlby One SC', cursive;
+        }
+    }
     nav {
         display: flex;
         width: 100%;
         justify-content: center;
+        margin: 0.5em 0;
         .router {
             color: #fff;
             font-family: 'Bowlby One SC', cursive;
@@ -71,4 +148,9 @@ body {
             width: 100%;
         }
     }
+}
+
+#active {
+    background: linear-gradient(90deg, rgba(134, 1, 255, 1) 0%, rgba(160, 0, 255, 1) 29%, rgba(180, 0, 255, 1) 61%, rgba(215, 2, 255, 1) 100%);
+    border: 0px;
 }

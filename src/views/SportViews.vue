@@ -24,7 +24,7 @@
     
    
           <div class="quiz_image">
-      <img :src="img.img" class="box" v-for="(img,index) in questions.slice(a,b) " :key="index" alt="">
+      <img :src="`img.img`" class="box" v-for="(img,index) in questions.slice(a,b) " :key="index" alt="">
 
      </div>
           <div class="box" v-for="(question,index) in questions.slice(a,b)" :key="index" v-show="quiz">
@@ -166,6 +166,9 @@ export default {
       
     }
   },
+  mounted() {
+    this.importAll(require.context('../assets/img/', true, /\.png$/, /\.jpg$/, /\.svg$/, /\.jpeg$/));
+},
   methods:{
     
     selectResp(e){

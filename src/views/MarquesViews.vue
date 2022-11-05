@@ -105,7 +105,7 @@ return{
     },
     {
       question:"Quelle est la paire de nike la plus vendu de la marque ?",
-      img:"\~/assets/img/nike.webp",
+      img:"../assets/img/nike.webp",
       propositions:[
        
         {props:'Jordan 1'},
@@ -116,7 +116,7 @@ return{
       ]
     }, {
       question:"Quel est l'embleme de la marque toblerone ?",
-      img:"assets/img/toblerone.jpeg",
+      img:"../assets/img/toblerone.jpeg",
       propositions:[
         {props:'Une patte Lapin'},
         {props:'Un Lac',},
@@ -127,7 +127,7 @@ return{
       ]
     }, {
       question:"Ou a été céer le Premier McDonald's",
-      img:"assets/img/mcdo.jpeg",
+      img:"../assets/img/mcdo.jpeg",
       propositions:[
         {props:'Chicago',correct:true},
         {props:'Los angeles'},
@@ -136,7 +136,7 @@ return{
       ]
     }, {
       question:"Ou se trouve le siege de Coca-Cola ?",
-      img:"assets/img/coca.jpg",
+      img:"../assets/img/coca.jpg",
       propositions:[
         {props:'Boston',},
         {props:'Dallas'},
@@ -146,7 +146,7 @@ return{
     },
     {
       question:"Quel symbole cache le logo fedex ?",
-      img:"assets/img/fedex.jpeg",
+      img:"../assets/img/fedex.jpeg",
       propositions:[
         {props:'Une fleche',correct:true},
         {props:'Un point'},

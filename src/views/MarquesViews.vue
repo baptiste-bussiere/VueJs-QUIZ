@@ -105,7 +105,7 @@ return{
     },
     {
       question:"Quelle est la paire de nike la plus vendu de la marque ?",
-      img:"assets/img/nike.webp",
+      img:"\~/assets/img/nike.webp",
       propositions:[
        
         {props:'Jordan 1'},

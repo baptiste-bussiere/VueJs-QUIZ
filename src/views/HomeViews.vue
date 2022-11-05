@@ -1,7 +1,7 @@
 
 
 <template>
-<div class="menu_box">
+<div class="menu_box" style="    height: 85vh;">
 <h1>QUIZZZZZ'</h1>
   <quizbox></quizbox>
 </div>

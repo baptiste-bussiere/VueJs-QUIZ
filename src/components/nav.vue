@@ -2,7 +2,7 @@
   <nav>
     
    
-      <RouterLink class="router" to="/"> <span> ⬅️ retour</span>   </RouterLink>
+      <RouterLink class="router" to="/"> <span> ⬅️ Retour</span>   </RouterLink>
     <h1>QUIZZZZZ'</h1>
   
   </nav>

@@ -21,10 +21,11 @@
 
 
    </div>    
-        <h1>Question {{b}}/{{questions.length}}</h1>
+    
    
           <div class="quiz_image">
-      <img src="../assets/img/sport.jpg" alt="">
+      <img :src="img.img" class="box" v-for="(img,index) in questions.slice(a,b) " :key="index" alt="">
+
      </div>
           <div class="box" v-for="(question,index) in questions.slice(a,b)" :key="index" v-show="quiz">
               
@@ -33,7 +34,7 @@
                 <h1>{{question.question}}</h1>
       
       <div class="box_props">
-        <li v-for="(proposition,index) in question.propositions" :key="index" class="li" @click="selectResponse(proposition,index)" :class=" correct ? check(proposition) : ''">{{proposition.props}} <div class="fas fa-check" v-if="correct ?  proposition.correct: ''"></div><div class="fas fa-times" v-if="correct ?  !proposition.correct: ''"></div></li>
+        <li v-for="(proposition,index) in question.propositions" :key="index" class="li" @click="selectResponse(proposition,index)" :class=" correct ? check(proposition) : ''">{{proposition.props}}</li>
 
       </div>       
                   
@@ -42,14 +43,29 @@
               
               
           </div>
-          <div class="box-score" v-if="score_show">
-              
-              
-              <h2>Vous avez marqué(e)</h2>
-              <h2>{{score}} point(s)</h2>
-              <div class="btn-restart">
-                  <button @click="restartQuiz">rejouer <i class="fas fa-sync-alt"></i></button>
+          <div class="back_score" v-if="score_show">
+            <div class="score">
+              <navigation></navigation>
+              <h1>Resultats</h1>
+              <div class="result">
+                 <h2 v-if="score >= 3" >Hip Hip Hip Hourra ! On dirait bien que c'est vous, le vrai champion 🎉</h2>
+
+                <h2 v-else>Courage ! vous ferez mieux la prochaine fois 😉 </h2>
+              <h2>{{score}} point(s)</h2></div>
+              <div class="back">
+             
+              <RouterLink class="btn" to="/pub"> <span>Prochain Quiz</span>   </RouterLink> 
+
+                  <button class="btn" @click="restartQuiz">Recommencer le quiz</button>
+      
+              <RouterLink class="btn prec" to="/"> <span>Retourner au menu</span>   </RouterLink>
+
               </div>
+             
+            </div>
+              
+              
+            
           </div>
 
                 <div v-if="progress < 100" class="button_quiz">                   
@@ -79,8 +95,8 @@ export default {
 
       questions:[
         {
-          question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          question:"Qui à le plus de victoire en F1 ?",
+          img:"src/assets/img/f1.jpg",
           propositions:[
             {props:'Lewis Hamilton',correct:true},
             {props:'Nicolas Latifi (goat)'},
@@ -89,50 +105,53 @@ export default {
           ]
         },
         {
-          question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          question:"Qui a le plus de ballon d'or ?",
+          img:"src/assets/img/foot.jpg",
           propositions:[
-            {props:'Lewis Hamilton',correct:true},
-            {props:'Nicolas Latifi (goat)'},
-            {props:'Ayrton Senna',},
-            {props:'Michael Schumacher',}
+           
+            {props:'Christiano Ronaldo'},
+            {props:'Zinédine Zidane',},
+            {props:'Lionel Messi',correct:true},
+            {props:'Karim Benzema',}
           ]
         }, {
-          question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          question:"Quel numero porte Michael Jordan ?",
+          img:"src/assets/img/basket.jpg",
           propositions:[
-            {props:'Lewis Hamilton',correct:true},
-            {props:'Nicolas Latifi (goat)'},
-            {props:'Ayrton Senna',},
-            {props:'Michael Schumacher',}
+            {props:'10'},
+            {props:'4',},
+            {props:'12',},
+            {props:'23',correct:true},
+
+
           ]
         }, {
-          question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          question:"Combien de fois Rafael Nadal a gagné Roland-Garros",
+          img:"src/assets/img/tenis.jpg",
           propositions:[
-            {props:'Lewis Hamilton',correct:true},
-            {props:'Nicolas Latifi (goat)'},
-            {props:'Ayrton Senna',},
-            {props:'Michael Schumacher',}
+            {props:'14 fois',correct:true},
+            {props:'8 fois'},
+            {props:'12 fois',},
+            {props:'16 fois',}
           ]
         }, {
-          question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          question:"Combien y a-il de joueur sur le terrain de volley ?",
+          img:"src/assets/img/voley.jpg",
           propositions:[
-            {props:'Lewis Hamilton',correct:true},
-            {props:'Nicolas Latifi (goat)'},
-            {props:'Ayrton Senna',},
-            {props:'Michael Schumacher',}
+            {props:'5 joueurs',},
+            {props:'8 joueurs'},
+            {props:'6 joueurs',correct:true},
+            {props:'7 joueurs',}
           ]
         },
         {
           question:"Qui à le plus de victoire en F1",
-          img:"../assets/img/",
+          img:"src/assets/img/golf.jpg",
           propositions:[
-            {props:'Lewis Hamilton',correct:true},
-            {props:'Nicolas Latifi (goat)'},
-            {props:'Ayrton Senna',},
-            {props:'Michael Schumacher',}
+            {props:'18 trous',correct:true},
+            {props:'16 trous'},
+            {props:'21 trous',},
+            {props:'15 trous',}
           ]
         },
       ],

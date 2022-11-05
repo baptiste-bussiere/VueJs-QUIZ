@@ -34,7 +34,7 @@
                 <h1>{{question.question}}</h1>
       
       <div class="box_props">
-        <li v-for="(proposition,index) in question.propositions" :key="index" class="li" @click="selectResponse(proposition,index)" :class=" correct ? check(proposition) : ''">{{proposition.props}}</li>
+        <li v-for="(proposition,index) in question.propositions" :key="index" class="li" @click="selectResp(proposition,index)" :class=" correct ? check(proposition) : ''">{{proposition.props}}</li>
 
       </div>       
                   
@@ -46,17 +46,17 @@
           <div class="back_score" v-if="score_show">
             <div class="score">
               <navigation></navigation>
-              <h1>Resultats</h1>
+              <h1>Résultats</h1>
               <div class="result">
                  <h2 v-if="score >= 3" >Hip Hip Hip Hourra ! On dirait bien que c'est vous, le vrai champion 🎉</h2>
 
-                <h2 v-else>Courage ! vous ferez mieux la prochaine fois 😉 </h2>
+                <h2 v-else>Courage ! Vous ferez mieux la prochaine fois 😉 </h2>
               <h2>{{score}} point(s)</h2></div>
               <div class="back">
              
-              <RouterLink class="btn" to="/pub"> <span>Prochain Quiz</span>   </RouterLink> 
+              <RouterLink class="btn" to="/marques"> <span>Prochain Quiz</span>   </RouterLink> 
 
-                  <button class="btn" @click="restartQuiz">Recommencer le quiz</button>
+                  <button class="btn" @click="restart">Recommencer le quiz</button>
       
               <RouterLink class="btn prec" to="/"> <span>Retourner au menu</span>   </RouterLink>
 
@@ -69,8 +69,8 @@
           </div>
 
                 <div v-if="progress < 100" class="button_quiz">                   
-                   <button @click="nextQuestion()">Suivant</button>
-                    <button class="prec" @click="skipQuestion()" >Passer la Question</button>
+                   <button @click="nextQuest()">Suivant</button>
+                    <button class="prec" @click="skip()" >Passer la Question</button>
           </div>
           
           
@@ -135,7 +135,7 @@ export default {
             {props:'16 fois',}
           ]
         }, {
-          question:"Combien y a-il de joueur sur le terrain de volley ?",
+          question:"Combien y a-il de joueur au volley ?",
           img:"src/assets/img/voley.jpg",
           propositions:[
             {props:'5 joueurs',},
@@ -145,7 +145,7 @@ export default {
           ]
         },
         {
-          question:"Qui à le plus de victoire en F1",
+          question:"Combien de trous y a t-il dans un terrain de golf ?",
           img:"src/assets/img/golf.jpg",
           propositions:[
             {props:'18 trous',correct:true},
@@ -168,7 +168,7 @@ export default {
   },
   methods:{
     
-    selectResponse(e){
+    selectResp(e){
       this.correct = true;
       this.next = false;
       if (e.correct) {
@@ -183,14 +183,14 @@ export default {
           return 'incorrect' 
         }
     },
-    checkStatus(next){
+    checkStat(next){
         if (next.true) {
           return 'shake'
         }else{
           return 'blabla' 
         }
     },
-    nextQuestion(){
+    nextQuest(){
       if (this.next) {
         return;
       }
@@ -208,7 +208,7 @@ export default {
       }
       
     },
-    skipQuestion(){
+    skip(){
       if (!this.next) {
         return;
       }
@@ -227,7 +227,7 @@ export default {
       
     },
     
-    restartQuiz(){
+    restart(){
       
       Object.assign(this.$data, this.$options.data()); // reset data in vue
        

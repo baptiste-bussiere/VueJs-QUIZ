@@ -10,24 +10,24 @@
     </div>
 </div>
 <div class="quiz_box">
-  <img src="../assets/img/pub.jpg" alt="">
+  <img src="../assets/img/marques.jpeg" alt="">
     <div class="quiz_info">
-      <span>Pub</span> 
-      <RouterLink class="routerlink" to="/pub">Commencer</RouterLink>
+      <span>Marques</span> 
+      <RouterLink class="routerlink" to="/marques">Commencer</RouterLink>
     </div>
 </div>
 <div class="quiz_box">
-  <img src="../assets/img/meteo.jpg" alt="">
+  <img src="../assets/img/nature.jpeg" alt="">
     <div class="quiz_info">
-      <span>Météo</span> 
-      <RouterLink class="routerlink" to="/meteo">Commencer</RouterLink>
+      <span>Nature</span> 
+      <RouterLink class="routerlink" to="/nature">Commencer</RouterLink>
     </div>
 </div>
 <div class="quiz_box">
-  <img src="../assets/img/culture.JPG" alt="">
+  <img src="../assets/img/f40.jpeg" alt="">
     <div class="quiz_info">
-      <span>Culture</span> 
-      <RouterLink class="routerlink" to="/culture">Commencer</RouterLink>
+      <span>Automobile</span> 
+      <RouterLink class="routerlink" to="/voiture">Commencer</RouterLink>
     </div>
   </div>
 </div>

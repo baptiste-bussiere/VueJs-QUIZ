@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeViews.vue'
-import quiz from '../views/QuizViews.vue'
+import marques from '../views/MarquesViews.vue'
 import sport from '../views/SportViews.vue'
+import nature from '../views/NatureViews.vue'
+import voiture from '../views/VoitureViews.vue'
+
 
 
 
@@ -19,19 +22,19 @@ const router = createRouter({
             component: sport
         },
         {
-            path: '/pub',
-            name: 'pub',
-            component: quiz
+            path: '/marques',
+            name: 'marques',
+            component: marques
         },
         {
-            path: '/meteo',
-            name: 'meteo',
-            component: quiz
+            path: '/nature',
+            name: 'nature',
+            component: nature
         },
         {
-            path: '/culture',
-            name: 'culture',
-            component: quiz,
+            path: '/voiture',
+            name: 'voiture',
+            component: voiture,
         }
 
     ]

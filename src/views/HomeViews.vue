@@ -2,7 +2,7 @@
 
 <template>
 <div class="menu_box">
-  <navigation></navigation>
+<h1>QUIZZZZZ'</h1>
   <quizbox></quizbox>
 </div>
 </template>

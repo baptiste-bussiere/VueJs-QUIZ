@@ -7,13 +7,7 @@
      </div>
      <h1>{{question}}</h1>
      <div class="select_response">
-      <button class="response">reponse 1</button>
-      <button class="response">reponse 2</button>
-
-     </div>
-     <div class="select_response">
-      <button class="response">reponse 3</button>
-      <button class="response">reponse 4</button>
+      <li v-for="(proposition,index) in question.propositions" :key="index" class="li" @click="selectResponse(proposition,index)" :class=" correct ? check(proposition) : ''">{{proposition.props}} <div class="fas fa-check" v-if="correct ?  proposition.correct: ''"></div><div class="fas fa-times" v-if="correct ?  !proposition.correct: ''"></div></li>
 
      </div>  <button class="button">
 Suivant

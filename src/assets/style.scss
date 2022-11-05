@@ -5,24 +5,38 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     color: #fff;
 }
 
 .menu_box {
     width: 25vw;
-    height: 80vh;
+    height: 85vh;
     background-color: #2A3164;
     border-radius: 1.2em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     overflow: hidden;
     overflow-y: scroll;
-    padding: 0.5em;
+    padding: 2em;
     flex-direction: column;
     display: flex;
     align-items: center;
+    div {
+        .quiz_box {
+            margin: 1.5em 0;
+        }
+    }
+    .box {
+        h1 {
+            font-size: 1em;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0.8em 0;
+            font-weight: 800;
+        }
+    }
     .quiz_image {
-        padding: 1em;
+        height: 80%;
+        overflow: hidden;
+        border-radius: 1em;
         img {
             margin: 1em 0;
             width: 100%;
@@ -30,53 +44,86 @@ body {
         }
     }
     h1 {
-        font-size: 1.4em;
+        font-size: 2em;
         margin: 0;
         font-family: 'Bowlby One SC', cursive;
         text-align: center;
         margin-bottom: 0.3em;
     }
-    .select_response {
+    .box_props {
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
-        .response {
-            width: 50%;
+        margin: 1em 0;
+        li {
+            width: 48%;
+            font-family: 'Quicksand', sans-serif;
             display: flex;
             justify-content: center;
-            margin: 0.5em;
             border-radius: 1em;
-            padding: 1.7em;
+            background-color: #383E6E;
+            padding: 1.7em 0;
+            flex-direction: row;
             color: #fff;
             cursor: pointer;
-            background-color: #383E6E;
             border: none;
             transition: 250ms;
+            &:nth-child(1) {
+                margin: 0 0.2em 0.2em 0;
+            }
+            &:nth-child(2) {
+                margin: 0 0 0.2em 0.2em;
+            }
+            &:nth-child(3) {
+                margin: 0.2em 0.2em 0 0;
+            }
+            &:nth-child(4) {
+                margin: 0.2em 0 0 0.2em;
+            }
             &:hover {
                 background-color: #454d8b;
             }
         }
-    }
-    .button {
-        border-radius: 1em;
-        color: #fff;
-        width: 95%;
-        padding: 1.7em;
-        border: none;
-        margin: 0.5em 0;
-        background: linear-gradient(90deg, rgba(128, 0, 255, 1) 0%, rgba(215, 2, 245, 1) 100%);
-        font-family: 'Quicksand', sans-serif;
-        transition: 250ms;
-        border: 1px solid rgba(128, 0, 255, 1);
-        cursor: pointer;
-        font-weight: 600;
-        &:hover {
-            text-decoration: underline;
+        .correct {
+            background-color: rgb(74, 219, 74);
+            color: white;
+            &:hover {
+                background-color: rgb(74, 219, 74);
+            }
+        }
+        .incorrect {
+            background-color: rgb(240, 117, 100);
+            color: white;
+            &:hover {
+                background-color: rgb(240, 117, 100);
+            }
         }
     }
-    .prec {
-        background: transparent;
-        border: none;
+    .button_quiz {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        button {
+            border-radius: 1em;
+            color: #fff;
+            width: 100%;
+            padding: 1.7em;
+            border: none;
+            margin: 0.5em 0;
+            background: linear-gradient(90deg, rgba(128, 0, 255, 1) 0%, rgba(215, 2, 245, 1) 100%);
+            font-family: 'Quicksand', sans-serif;
+            transition: 250ms;
+            cursor: pointer;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .prec {
+            background: transparent;
+            border: none;
+        }
     }
     .progress_bar {
         display: flex;
@@ -96,13 +143,20 @@ body {
     nav {
         display: flex;
         width: 100%;
-        justify-content: center;
-        margin: 0.5em 0;
+        align-items: center;
+        justify-content: space-between;
         .router {
             color: #fff;
             font-family: 'Bowlby One SC', cursive;
             text-decoration: none;
+            span {
+                font-family: 'Quicksand', sans-serif;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
+        h1 {}
     }
     .quiz_box {
         margin: 1em;
@@ -150,7 +204,7 @@ body {
     }
 }
 
-#active {
+.active {
     background: linear-gradient(90deg, rgba(134, 1, 255, 1) 0%, rgba(160, 0, 255, 1) 29%, rgba(180, 0, 255, 1) 61%, rgba(215, 2, 255, 1) 100%);
     border: 0px;
 }

@@ -96,7 +96,7 @@ export default {
       questions:[
         {
           question:"Qui à le plus de victoire en F1 ?",
-          img:"src/assets/img/f1.jpg",
+          img:"assets/img/f1.jpg",
           propositions:[
             {props:'Lewis Hamilton',correct:true},
             {props:'Nicolas Latifi (goat)'},
@@ -106,7 +106,7 @@ export default {
         },
         {
           question:"Qui a le plus de ballon d'or ?",
-          img:"src/assets/img/foot.jpg",
+          img:"assets/img/foot.jpg",
           propositions:[
            
             {props:'Christiano Ronaldo'},
@@ -116,7 +116,7 @@ export default {
           ]
         }, {
           question:"Quel numero porte Michael Jordan ?",
-          img:"src/assets/img/basket.jpg",
+          img:"assets/img/basket.jpg",
           propositions:[
             {props:'10'},
             {props:'4',},
@@ -127,7 +127,7 @@ export default {
           ]
         }, {
           question:"Combien de fois Rafael Nadal a gagné Roland-Garros",
-          img:"src/assets/img/tenis.jpg",
+          img:"assets/img/tenis.jpg",
           propositions:[
             {props:'14 fois',correct:true},
             {props:'8 fois'},
@@ -136,7 +136,7 @@ export default {
           ]
         }, {
           question:"Combien y a-il de joueur au volley ?",
-          img:"src/assets/img/voley.jpg",
+          img:"assets/img/voley.jpg",
           propositions:[
             {props:'5 joueurs',},
             {props:'8 joueurs'},
@@ -146,7 +146,7 @@ export default {
         },
         {
           question:"Combien de trous y a t-il dans un terrain de golf ?",
-          img:"src/assets/img/golf.jpg",
+          img:"assets/img/golf.jpg",
           propositions:[
             {props:'18 trous',correct:true},
             {props:'16 trous'},
@@ -166,9 +166,7 @@ export default {
       
     }
   },
-  mounted() {
-    this.importAll(require.context('../assets/img/', true, /\.png$/, /\.jpg$/, /\.svg$/, /\.jpeg$/));
-},
+
   methods:{
     
     selectResp(e){

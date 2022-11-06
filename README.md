@@ -30,14 +30,14 @@ npm run build
 Capture d'écran de la page de selection des quiz.
 
 
-![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/1.png)
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/main/screens/1.png)
 
 
 Capture d'ecran du quizz automobile.
 
 
 
-![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/2.png")
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/main/screens/2.png)
 
 
 
@@ -45,7 +45,7 @@ Capture d'ecran du quizz automobile.
 Capture d'ecran de la page de resultat.
 
 
-![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/3.png")
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/main/screens/3.png)
 
 
 

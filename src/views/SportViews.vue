@@ -98,7 +98,7 @@ export default {
       questions:[
         {
           question:"Qui à le plus de victoire en F1 ?",
-          img: require("@/assets/logo.png"),
+          img: "assets/img/f1.jpg",
           propositions:[
             {props:'Lewis Hamilton',correct:true},
             {props:'Nicolas Latifi (goat)'},

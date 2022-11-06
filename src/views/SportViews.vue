@@ -24,8 +24,10 @@
     
    
           <div class="quiz_image">
-      <img :src="img.img" class="box" v-for="(img,index) in questions.slice(a,b) " :key="index" alt="">
+            <div v-for="(img,index) in questions.slice(a,b)" :key="index">
+      <img  class="box" :src="img.img"  alt="">
 
+            </div>
      </div>
           <div class="box" v-for="(question,index) in questions.slice(a,b)" :key="index" v-show="quiz">
               
@@ -96,7 +98,7 @@ export default {
       questions:[
         {
           question:"Qui à le plus de victoire en F1 ?",
-          img: require('@/assets/img/f1.jpg'),
+          img: require("@/assets/logo.png"),
           propositions:[
             {props:'Lewis Hamilton',correct:true},
             {props:'Nicolas Latifi (goat)'},

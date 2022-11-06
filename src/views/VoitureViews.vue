@@ -96,7 +96,7 @@ return{
   questions:[
     {
       question:"Quel nom porte cette voiture ?",
-      img:"src/assets/img/f410.jpeg",
+      img:"assets/img/f410.jpeg",
       propositions:[
         {props:'Ferrari Carrera',},
         {props:'Ferrari F40',correct:true},
@@ -106,7 +106,7 @@ return{
     },
     {
       question:"Dans quelle categorie etais engager cette voiture ?",
-      img:"src/assets/img/s1.jpeg",
+      img:"assets/img/s1.jpeg",
       propositions:[
        
         {props:'WRC'},
@@ -116,7 +116,7 @@ return{
       ]
     }, {
       question:"Qui à conçu ce vehicule ?",
-      img:"src/assets/img/f1.jpeg",
+      img:"assets/img/f1.jpeg",
       propositions:[
         {props:'Tinker Hatfield'},
         {props:'Enzo Ferrari',},
@@ -127,7 +127,7 @@ return{
       ]
     }, {
       question:"Quelle est la marque de cette voiture ?",
-      img:"src/assets/img/gt3rs.jpg",
+      img:"assets/img/gt3rs.jpg",
       propositions:[
         {props:'Porsche',correct:true},
         {props:'Bentley'},
@@ -136,7 +136,7 @@ return{
       ]
     }, {
       question:"Qui a créer la marque de voiture Pagani ?",
-      img:"src/assets/img/pagani.webp",
+      img:"assets/img/pagani.webp",
       propositions:[
         {props:'Valentino Pagani',},
         {props:'Enzo Maranelo'},
@@ -146,7 +146,7 @@ return{
     },
     {
       question:"De quelle moteur est equipé cette voiture ?",
-      img:"src/assets/img/carrera.jpg",
+      img:"assets/img/carrera.jpg",
       propositions:[
         {props:'V10 atmosphérique',correct:true},
         {props:'V12 atmosphérique'},

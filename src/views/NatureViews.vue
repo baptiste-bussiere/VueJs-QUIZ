@@ -96,7 +96,7 @@ return{
   questions:[
     {
       question:"De quel famille d'animaux fait le ragondin fait-il partis ?",
-      img:"src/assets/img/ragondin.jpeg",
+      img:"assets/img/ragondin.jpeg",
       propositions:[
         {props:'Les Mamifères',correct:true},
         {props:'Les rongeurs'},
@@ -106,7 +106,7 @@ return{
     },
     {
       question:"Quand les grottes de lascaux ont elle été decouvertes ?",
-      img:"src/assets/img/lascaux.jpeg",
+      img:"assets/img/lascaux.jpeg",
       propositions:[
        
         {props:'1925'},
@@ -116,7 +116,7 @@ return{
       ]
     }, {
       question:"Quelle taille fait le mont everest ?",
-      img:"src/assets/img/everest.jpg",
+      img:"assets/img/everest.jpg",
       propositions:[
         {props:'9752 Metres'},
         {props:'12 254 Metres',},
@@ -127,7 +127,7 @@ return{
       ]
     }, {
       question:"Quel est le nom de cette fleur ?",
-      img:"src/assets/img/tulipe.jpeg",
+      img:"assets/img/tulipe.jpeg",
       propositions:[
         {props:'Une tulipe',correct:true},
         {props:'Une rose'},
@@ -136,7 +136,7 @@ return{
       ]
     }, {
       question:"A quelle distance un aigle peut-il reperer une proie ?",
-      img:"src/assets/img/aigle.jpeg",
+      img:"assets/img/aigle.jpeg",
       propositions:[
         {props:'1000 Metres',correct:true},
         {props:'50 Metres'},
@@ -146,7 +146,7 @@ return{
     },
     {
       question:"Ou pouvons nous le plus souvent observer les aurores boréales ?",
-      img:"src/assets/img/ab.jpeg",
+      img:"assets/img/ab.jpeg",
       propositions:[
         {props:'En Australie',},
         {props:'En Afrique'},

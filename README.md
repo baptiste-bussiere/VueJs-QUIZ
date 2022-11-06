@@ -1,17 +1,14 @@
-# VUE JS INITIATION
+# VUE JS QUIZZZZZZ
 
-Creation d'un formulaire de login/signup.
+Création de 4 quiz en VueJS. Sport, Automobile, Nature, Marques.
 
-Ce projet est le tout premier que je realise avec VueJS.
-Pour apprendre je me suis aider de [la documentation de VueJS](https://vuejs.org/guide/introduction.html).
-J'ai aussi utiliser [le cours d'open classroom](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js)
-qui utilise la v2 de Vue, mais qui est quand meme un bon point de depart pour commencer.
+Second projet réalise en VueJS avec l'utilisation de [vite](https://vitejs.dev/) pour le lancement de l'application.
 
 
-Retrouver [l'application ici](https://vue-form-baptiste-bussiere.vercel.app) !
+Retrouver [l'application ici](https://vue-js-quiz.vercel.app/) !
 
-[https://vue-form-baptiste-bussiere.vercel.app](https://vue-form-baptiste-bussiere.vercel.app)
-## Installer les dependances 
+[https://vue-js-quiz.vercel.app/](https://vue-js-quiz.vercel.app/)
+## Installer les dépendances 
 ```
 npm install
 ```
@@ -30,21 +27,32 @@ npm run build
 ## Screenshots
 
 
-Capture d'ecran de la page d'inscription.
+Capture d'écran de la page de selection des quiz.
 
 
-![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJS-Initiation/master/screen/signup.png)
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/1.png)
 
 
-Capture d'ecran de la page de connexion.
+Capture d'ecran du quizz automobile.
 
 
 
-![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJS-Initiation/master/screen/signin.png
-)
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/2.png")
+
+
+
+
+Capture d'ecran de la page de resultat.
+
+
+![App Screenshot](https://raw.githubusercontent.com/baptiste-bussiere/VueJs-QUIZ/blob/main/screens/3.png")
+
+
+
 
 ## Language utilisé
 
 ![html](https://img.shields.io/badge/-Html-E34F26?logo=html5&logoColor=white&style=flat-square)
 ![scss](https://img.shields.io/badge/-Scss-CC6699?logo=sass&logoColor=white&style=flat-square)
 ![vue](https://img.shields.io/badge/-VueJS-4FC08D?logo=vue.js&logoColor=white&style=flat-square)
+![vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat-square)
